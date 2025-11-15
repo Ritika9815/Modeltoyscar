@@ -97,5 +97,21 @@ const mustang = new ToyCar(
 function displayCar(carObj) {
     carDisplay.innerHTML = carObj.describe();
 }
+/*
+    STEP 6: Add interactivity to change the car color.
+    The user enters a new color, and the display updates dynamically.
+*/
+changeColorBtn.addEventListener("click", function() {
+    const newColor = prompt("Enter a new color for the car:");
+    if(newColor) {
+        mustang.color = newColor;
+        displayCar(mustang);
+    }
+});
+
+/*
+    STEP 7: Display the car when the page first loads.
+*/
+displayCar(mustang);
 
 
