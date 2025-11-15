@@ -46,5 +46,27 @@ function ToyCar(
     this.wheelsTurn = wheelsTurn;
     this.inStock = inStock;
 }
+/*
+    STEP 3: Add a describe() method to ToyCar prototype.
+    This method returns a formatted string describing all properties of the car.
+    Using prototype saves memory because all objects share the same function.
+*/
+ToyCar.prototype.describe = function() {
+    return `
+        <img src=images/mustang.jpg"" alt="${this.name}">
+        <h2>${this.name}</h2>
+        <p>Scale: ${this.scale}</p>
+        <p>Manufacturer: ${this.manufacturer}</p>
+        <p>Year: ${this.year}</p>
+        <p>Material: ${this.material}</p>
+        <p>Weight: ${this.weight} grams</p>
+        <p>Dimensions: ${this.length} x ${this.width} x ${this.height} cm</p>
+        <p>Color: ${this.color}</p>
+        <p>Price: $${this.price}</p>
+        <p>Doors Open: ${this.doorsOpen}</p>
+        <p>Working Wheels: ${this.wheelsTurn}</p>
+        <p>Available in Stock: ${this.inStock}</p>
+    `;
+};
 
 
