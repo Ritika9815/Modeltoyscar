@@ -69,4 +69,33 @@ ToyCar.prototype.describe = function() {
     `;
 };
 
+/*
+    STEP 4: Create an instance of ToyCar for the Mustang GT.
+    This object represents the real product chosen from ModelToyCars.com
+*/
+const mustang = new ToyCar(
+    "1967 Ford Mustang GT",
+    "1:24",
+    "Welly",
+    "Red",
+    1967,
+    "Die-cast Metal",
+    350,
+    39.99,
+    19,
+    7,
+    5,
+    true,
+    true,
+    true
+);
+
+/*
+    STEP 5: Function to display the car object on the webpage.
+    The innerHTML of carDisplay is replaced with the formatted description.
+*/
+function displayCar(carObj) {
+    carDisplay.innerHTML = carObj.describe();
+}
+
 
