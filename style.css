@@ -21,3 +21,20 @@ body {
     flex-direction: column;
     align-items: center;
 }
+/* STEP 3: Style main heading */
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+/* STEP 4: Style the car card container */
+.car-card {
+    width: 320px;              /* Fixed width for the card */
+    background-color: #ffffff; /* White background */
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Soft shadow */
+    text-align: center;        /* Center all text and content */
+    margin-bottom: 20px;
+}
