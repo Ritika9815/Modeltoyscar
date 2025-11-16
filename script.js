@@ -53,7 +53,7 @@ function ToyCar(
 */
 ToyCar.prototype.describe = function() {
     return `
-        <img src=images/mustang.jpg"" alt="${this.name}">
+        <img src="images/mustang.jpg" alt="${this.name}">
         <h2>${this.name}</h2>
         <p>Scale: ${this.scale}</p>
         <p>Manufacturer: ${this.manufacturer}</p>
