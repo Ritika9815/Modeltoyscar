@@ -68,4 +68,14 @@ button {
 button:hover {
     background-color: #004c99;
 }
+/* STEP 7: Responsive adjustments for small screens */
+@media (max-width: 480px) {
+    .car-card {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+}
 
