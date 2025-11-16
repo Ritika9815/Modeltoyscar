@@ -38,3 +38,34 @@ h1 {
     text-align: center;        /* Center all text and content */
     margin-bottom: 20px;
 }
+/* STEP 4a: Style car images inside the card */
+.car-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* STEP 5: Style text paragraphs inside the card */
+.car-card p {
+    font-size: 16px;
+    margin: 8px 0;
+    color: #444;
+}
+
+/* STEP 6: Style the "Change Car Color" button */
+button {
+    background-color: #0066cc; /* Blue button */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* STEP 6a: Button hover effect */
+button:hover {
+    background-color: #004c99;
+}
+
